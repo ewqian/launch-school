@@ -1,0 +1,20 @@
+Q: Assume you have the following code:
+
+```
+require 'date'
+
+puts Date.civil
+puts Date.civil(2016)
+puts Date.civil(2016, 5)
+puts Date.civil(2016, 5, 13)
+```
+
+What will each of the 4 puts statements print?
+
+A:
+in Ruby 3.2.0 documentation: Date.civil == Date.new which has the following default arguments: new(year = -4712, month = 1, mday = 1, start = Date::ITALY)
+
+puts Date.civil # => '-4712-01-01' 
+puts Date.civil(2016) # => '2016-01-01'
+puts Date.civil(2016, 5) # => '2016-05-01'
+puts Date.civil(2016, 5, 13) # => '2016-05-13'
