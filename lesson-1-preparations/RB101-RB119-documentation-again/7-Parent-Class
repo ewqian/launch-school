@@ -13,5 +13,5 @@ A:
 puts s.public_methods(false).inspect
 https://ruby-doc.org/3.2.0/Object.html#method-i-public_methods
 
-public_methods has the following syntax: public_methods(all=true) → array. when all is set to false, then it'll only return methods in the reciever.
+public_methods has the following syntax: public_methods(all=true) → array. when all is set to false, then it'll only return methods defined directly in the calling object's class (in this case the String class).
 
