@@ -1,0 +1,1 @@
+This code outputs 34. The method doesn't mutate its argument answer, because numbers are immutable.

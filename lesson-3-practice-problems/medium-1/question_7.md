@@ -1,0 +1,1 @@
+The family's data got ransacked because the hash::[] method mutates it's caller. This method gets the value at the designated index & changes it.
