@@ -1,0 +1,1 @@
+This won't output an error even though the if statement doesn't get executed. The last line of code will return nil, because an if conditional that isn't executed will still make the assignment of the local variable in it to nil.

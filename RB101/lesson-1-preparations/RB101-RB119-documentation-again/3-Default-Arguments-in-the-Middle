@@ -1,0 +1,17 @@
+Q: Consider the following method and a call to that method:
+
+```
+def my_method(a, b = 2, c = 3, d)
+  p [a, b, c, d]
+end
+
+my_method(4, 5, 6)
+```
+
+Use the ruby documentation to determine what this code will print.
+
+A:
+https://ruby-doc.org/3.2.0/syntax/calling_methods_rdoc.html#label-Default+Positional+Arguments
+
+my_method(4, 5, 6) # => [4, 5, 3, 6]
+first 4 is assigned to a, then 6 is assigned to d, finally 5 is assigned to b & c retains its default value of 3.

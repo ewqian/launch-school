@@ -1,0 +1,1 @@
+for i in (0..9) do puts "#{'  ' * i}The Flintstones Rock"  end

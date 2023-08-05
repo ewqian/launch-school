@@ -1,0 +1,15 @@
+Q: The Array#bsearch method is used to search ordered Arrays more quickly than #find and #select can. Assume you have the following code:
+
+```
+a = [1, 4, 8, 11, 15, 19]
+```
+
+How would you search this Array to find the first element whose value exceeds 8?
+
+A: 
+I would search the 'a' using bsearch with the following code:
+```
+puts a.bsearch { |val| val > 8 } # => 11
+```
+
+bsearch uses binary search to find the first element that meets the blocks conditions. if this array wasn't sorted (ascending) then we would need to sort it first before using bsearch so that the algorithm can work efficiently & provide accurate results.
