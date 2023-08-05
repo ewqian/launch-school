@@ -1,1 +1,0 @@
-Variables a & c will reference the same objects & therefore have the same object_id. b on the other hand will reference a different object & have a different object_id. Even though b can have an object with the same value as a, this doesn't mean they reference the exact same object.

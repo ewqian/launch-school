@@ -1,1 +1,0 @@
-The last line of code will output "hi there". This is because informal_greeting references the original string value (the one in the greetings hash).
