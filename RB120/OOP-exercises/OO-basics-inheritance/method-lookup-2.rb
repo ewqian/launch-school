@@ -12,3 +12,4 @@ cat1.color
 puts cat1.class.ancestors
 
 # Cat > Animal > Object > Kernel > BasicObject
+# color method not found in any checked class / module
