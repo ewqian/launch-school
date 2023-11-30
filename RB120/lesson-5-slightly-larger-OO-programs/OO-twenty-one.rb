@@ -172,7 +172,7 @@ class TwentyOne
     elsif dealer.busted?(dealer_total)
       puts "Dealer has busted, Player wins!"
     else
-      puts "Player's total: #{player.total} | Dealer's total: #{dealer.total}"
+      puts "Player's total: #{player_total} | Dealer's total: #{dealer_total}"
       puts "Player wins!" if (player_total <=> dealer_total) == 1
       puts "Dealer wins!" if (player_total <=> dealer_total) == -1
       puts "It's a tie!"  if (player_total <=> dealer_total) == 0
