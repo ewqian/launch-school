@@ -57,6 +57,7 @@ class TodoList
       raise TypeError, "Can only add Todo objects"
     end
   end
+  alias_method :<<, :add
 
   def size
     todos.size
@@ -81,6 +82,7 @@ class TodoList
   def item_at(idx)
     get_or_manipulate_list_items(idx, :item_at)
   end
+  alias_method :[], :item_at
 
   def mark_done_at(idx)
     get_or_manipulate_list_items(idx, :mark_done_at)
@@ -203,11 +205,11 @@ list.add(todo2)
 list.add(todo3)
 
 
-p list.find_by_title("Buy milk")
-p list.all_done
-p list.all_not_done
-p list.mark_done("Clean room")
-p list.mark_all_done
-p list.mark_all_undone
+list.find_by_title("Buy milk")
+list.all_done
+list.all_not_done
+list.mark_done("Clean room")
+list.mark_all_done
+list.mark_all_undone
 
-puts list
+list
