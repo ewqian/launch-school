@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>insert page title here</title>
+    <meta charset="utf-8">
+    <style>
+      div {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+      }
+
+      #red {
+        background-color: #fcc;
+        padding: 20px;
+        margin-right: 20px;
+      }
+
+      #blue {
+        background-color: #ccf;
+        /* 
+          The border causes the blue box to be a different size 
+          because its default box-sizing value is content-box.
+          Meaning the dimensions of an element only include its
+          content & NOT added padding, borders or margins.
+        */
+        border: 5px solid black;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red"></div>
+    <div id="blue"></div>
+  </body>
+</html>
